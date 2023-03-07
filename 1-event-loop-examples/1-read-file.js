@@ -2,7 +2,7 @@ const { readFile, writeFile } = require("fs");
 
 console.log("start task");
 
-// if run direct check file path
+// if run direct check file path ie ../content
 
 readFile("./content/first.txt", "utf8", (err, result) => {
   if (err) {
