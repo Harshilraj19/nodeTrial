@@ -1,16 +1,9 @@
-const { readFile, writeFile } = require("fs");
+const { readFile } = require("fs");
 
-console.log("start task");
-
-// if run direct check file path
-
-readFile("./content/first.txt", "utf8", (err, result) => {
+readFile("./content/first.txt", "utf-8", (err, result) => {
   if (err) {
     console.log(err);
     return;
   }
   console.log(result);
-  console.log("completed first task");
 });
-
-console.log("starting next immediate task");
